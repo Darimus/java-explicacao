@@ -22,5 +22,25 @@ public class MinhaClasse {
     // Aqui basicamente estamos dizendo:
     // System me da uma saida de escrita no console
     System.out.println(nome + ", " + ano + ", " + salario + ", " + genero + ", " + programador);
+
+    // Declarando metodos
+    // TipoRetorno NomeObjetivoInfinitivo Parametro (s)
+    // Ex:
+    
+    // int somar (int a, int b) {
+    //   int a = 1;
+    //   int b = 2;
+    //   return a + b;
+    // };
+
+    String hello = "Hello";
+    String world = "World";
+    String helloWorld = helloWorld(hello, world);
+
+    System.out.println(helloWorld);
+  }
+
+  public static String helloWorld(String hello, String world) {
+    return "Resultado do método: " + hello.concat(" ").concat(world);
   }
 }

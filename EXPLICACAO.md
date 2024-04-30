@@ -42,3 +42,51 @@ double salario = 1234.56;
 // Declarando uma variável do tipo String
 String nome = "Luiz";
 ```
+
+## Criando e Chamando um Método em Java
+
+Neste exemplo, temos dois métodos:
+
+O método helloWorld recebe duas strings (hello e world), concatena-as e retorna a mensagem formatada.
+O método main é o ponto de entrada do programa e chama o método helloWorld passando as strings "Hello" e "World". Em seguida, imprime o resultado retornado pelo método.
+Ao executar o programa, a saída será "Resultado do método: Hello World".
+
+```java
+// Método que concatena duas strings e retorna o resultado
+public static String helloWorld(String hello, String world) {
+    return "Resultado do método: " + hello.concat(" ").concat(world);
+}
+
+// Método principal que chama o método helloWorld e imprime o resultado
+public static void main(String[] args) {
+    String hello = "Hello";
+    String world = "World";
+    String helloWorld = helloWorld(hello, world);
+
+    System.out.println(helloWorld);
+}
+```
+
+## Indentação em Java
+
+A indentação é uma prática importante em Java e em muitas outras linguagens de programação. A indentação é usada para mostrar a estrutura e a hierarquia do código, facilitando a leitura e compreensão do programa.
+
+Em Java, a indentação é feita usando espaços ou tabulações. A convenção comum é usar 4 espaços para cada nível de indentação. Aqui está um exemplo de como um código Java pode ser indentado corretamente:
+
+```java
+public class MinhaClasse {
+    public static void main(String[] args) {
+        // Código indentado corretamente
+        String hello = "Hello";
+        String world = "World";
+        String helloWorld = helloWorld(hello, world);
+
+        System.out.println(helloWorld);
+    }
+
+    public static String helloWorld(String hello, String world) {
+        // Código indentado corretamente
+        return "Resultado do método: " + hello.concat(" ").concat(world);
+    }
+}
+```
