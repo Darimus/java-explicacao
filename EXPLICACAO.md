@@ -90,3 +90,34 @@ public class MinhaClasse {
     }
 }
 ```
+
+# Tipos Primitivos e Variáveis em Java
+
+Em Java, os tipos primitivos são os tipos de dados mais básicos e diretos fornecidos pela linguagem. Eles representam valores simples, como números inteiros, números decimais, caracteres, e valores verdadeiro/falso.
+
+Aqui estão os principais tipos primitivos em Java:
+
+- **int**: representa números inteiros.
+- **double**: representa números decimais de ponto flutuante.
+- **char**: representa um único caractere.
+- **boolean**: representa um valor verdadeiro ou falso.
+
+Além dos tipos primitivos, em Java também podemos declarar variáveis para armazenar valores. Uma variável é um espaço de armazenamento nomeado que pode conter um valor específico. Para declarar uma variável em Java, precisamos especificar o tipo da variável seguido pelo nome da variável.
+
+Aqui está um exemplo de como declarar variáveis em Java:
+
+```java
+public class ExemploVariaveis {
+    public static void main(String[] args) {
+        int idade; // declarando uma variável do tipo int
+        double precoProduto; // declarando uma variável do tipo double
+        char letra; // declarando uma variável do tipo char
+        boolean ehVerdadeiro; // declarando uma variável do tipo boolean
+
+        idade = 25; // atribuindo um valor à variável idade
+        precoProduto = 19.99; // atribuindo um valor à variável precoProduto
+        letra = 'A'; // atribuindo um valor à variável letra
+        ehVerdadeiro = true; // atribuindo um valor à variável ehVerdadeiro
+    }
+}
+```
