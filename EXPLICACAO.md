@@ -121,3 +121,59 @@ public class ExemploVariaveis {
     }
 }
 ```
+
+# Operadores em Java
+
+Os operadores em Java são símbolos que são usados para realizar operações em variáveis, constantes e expressões. Os operadores em Java podem ser classificados em diferentes categorias, como operadores aritméticos, operadores de atribuição, operadores relacionais, operadores lógicos, operadores bitwise, operadores de incremento/decremento, entre outros.
+
+Aqui estão alguns exemplos de operadores em Java:
+
+## Operadores Aritméticos
+
+- **Adição**: `+`
+- **Subtração**: `-`
+- **Multiplicação**: `*`
+- **Divisão**: `/`
+- **Módulo**: `%`
+
+## Operadores de Atribuição
+
+- **Atribuição**: `=`
+- **Adição e atribuição**: `+=`
+- **Subtração e atribuição**: `-=`
+- **Multiplicação e atribuição**: `*=`
+- **Divisão e atribuição**: `/=`
+- **Módulo e atribuição**: `%=`
+
+## Operadores Relacionais
+
+- **Igualdade**: `==`
+- **Desigualdade**: `!=`
+- **Maior que**: `>`
+- **Menor que**: `<`
+- **Maior ou igual a**: `>=`
+- **Menor ou igual a**: `<=`
+
+## Operadores Lógicos
+
+- **Conjunção**: `&&`
+- **Disjunção**: `||`
+- **Negação**: `!`
+
+## Operadores Bitwise
+
+- **AND bit a bit**: `&`
+- **OR bit a bit**: `|`
+- **XOR bit a bit**: `^`
+- **Complemento bit a bit**: `~`
+- **Deslocamento à esquerda**: `<<`
+- **Deslocamento à direita**: `>>`
+
+## Operadores de Incremento/Decremento
+
+- **Incremento**: `++`
+- **Decremento**: `--`
+
+Esses são apenas alguns exemplos de operadores em Java. Existem outros operadores disponíveis, como o operador de negação unária `-`, o operador de comparação `==`, o operador de atribuição condicional `+=`, entre outros.
+
+Para obter mais informações sobre os operadores em Java, consulte a documentação oficial da linguagem.
