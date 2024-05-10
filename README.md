@@ -177,3 +177,24 @@ Aqui estão alguns exemplos de operadores em Java:
 Esses são apenas alguns exemplos de operadores em Java. Existem outros operadores disponíveis, como o operador de negação unária `-`, o operador de comparação `==`, o operador de atribuição condicional `+=`, entre outros.
 
 Para obter mais informações sobre os operadores em Java, consulte a documentação oficial da linguagem.
+
+# Como tornar um número negativo positivo em Java
+
+Se você deseja tornar um número negativo positivo em Java, você pode usar a operação de multiplicação por -1. Aqui está um exemplo de como fazer isso:
+
+```java
+public class ExemploNumerosNegativos {
+    public static void main(String[] args) {
+        int numero = -5; // número negativo
+
+        // Tornar o número positivo
+        numero = numero * -1;
+
+        System.out.println("Número positivo: " + numero);
+    }
+}
+```
+
+Neste exemplo, o número inicial é -5. Para tornar o número positivo, multiplicamos-o por -1. O resultado é 5, que é um número positivo.
+
+Lembre-se de que a operação de multiplicação por -1 apenas reverterá o sinal do número. Portanto, se o número já for positivo, a operação não terá efeito.
