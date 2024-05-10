@@ -42,3 +42,138 @@ double salario = 1234.56;
 // Declarando uma variável do tipo String
 String nome = "Luiz";
 ```
+
+## Criando e Chamando um Método em Java
+
+Neste exemplo, temos dois métodos:
+
+O método helloWorld recebe duas strings (hello e world), concatena-as e retorna a mensagem formatada.
+O método main é o ponto de entrada do programa e chama o método helloWorld passando as strings "Hello" e "World". Em seguida, imprime o resultado retornado pelo método.
+Ao executar o programa, a saída será "Resultado do método: Hello World".
+
+```java
+// Método que concatena duas strings e retorna o resultado
+public static String helloWorld(String hello, String world) {
+    return "Resultado do método: " + hello.concat(" ").concat(world);
+}
+
+// Método principal que chama o método helloWorld e imprime o resultado
+public static void main(String[] args) {
+    String hello = "Hello";
+    String world = "World";
+    String helloWorld = helloWorld(hello, world);
+
+    System.out.println(helloWorld);
+}
+```
+
+## Indentação em Java
+
+A indentação é uma prática importante em Java e em muitas outras linguagens de programação. A indentação é usada para mostrar a estrutura e a hierarquia do código, facilitando a leitura e compreensão do programa.
+
+Em Java, a indentação é feita usando espaços ou tabulações. A convenção comum é usar 4 espaços para cada nível de indentação. Aqui está um exemplo de como um código Java pode ser indentado corretamente:
+
+```java
+public class MinhaClasse {
+    public static void main(String[] args) {
+        // Código indentado corretamente
+        String hello = "Hello";
+        String world = "World";
+        String helloWorld = helloWorld(hello, world);
+
+        System.out.println(helloWorld);
+    }
+
+    public static String helloWorld(String hello, String world) {
+        // Código indentado corretamente
+        return "Resultado do método: " + hello.concat(" ").concat(world);
+    }
+}
+```
+
+# Tipos Primitivos e Variáveis em Java
+
+Em Java, os tipos primitivos são os tipos de dados mais básicos e diretos fornecidos pela linguagem. Eles representam valores simples, como números inteiros, números decimais, caracteres, e valores verdadeiro/falso.
+
+Aqui estão os principais tipos primitivos em Java:
+
+- **int**: representa números inteiros.
+- **double**: representa números decimais de ponto flutuante.
+- **char**: representa um único caractere.
+- **boolean**: representa um valor verdadeiro ou falso.
+
+Além dos tipos primitivos, em Java também podemos declarar variáveis para armazenar valores. Uma variável é um espaço de armazenamento nomeado que pode conter um valor específico. Para declarar uma variável em Java, precisamos especificar o tipo da variável seguido pelo nome da variável.
+
+Aqui está um exemplo de como declarar variáveis em Java:
+
+```java
+public class ExemploVariaveis {
+    public static void main(String[] args) {
+        int idade; // declarando uma variável do tipo int
+        double precoProduto; // declarando uma variável do tipo double
+        char letra; // declarando uma variável do tipo char
+        boolean ehVerdadeiro; // declarando uma variável do tipo boolean
+
+        idade = 25; // atribuindo um valor à variável idade
+        precoProduto = 19.99; // atribuindo um valor à variável precoProduto
+        letra = 'A'; // atribuindo um valor à variável letra
+        ehVerdadeiro = true; // atribuindo um valor à variável ehVerdadeiro
+    }
+}
+```
+
+# Operadores em Java
+
+Os operadores em Java são símbolos que são usados para realizar operações em variáveis, constantes e expressões. Os operadores em Java podem ser classificados em diferentes categorias, como operadores aritméticos, operadores de atribuição, operadores relacionais, operadores lógicos, operadores bitwise, operadores de incremento/decremento, entre outros.
+
+Aqui estão alguns exemplos de operadores em Java:
+
+## Operadores Aritméticos
+
+- **Adição**: `+`
+- **Subtração**: `-`
+- **Multiplicação**: `*`
+- **Divisão**: `/`
+- **Módulo**: `%`
+
+## Operadores de Atribuição
+
+- **Atribuição**: `=`
+- **Adição e atribuição**: `+=`
+- **Subtração e atribuição**: `-=`
+- **Multiplicação e atribuição**: `*=`
+- **Divisão e atribuição**: `/=`
+- **Módulo e atribuição**: `%=`
+
+## Operadores Relacionais
+
+- **Igualdade**: `==`
+- **Desigualdade**: `!=`
+- **Maior que**: `>`
+- **Menor que**: `<`
+- **Maior ou igual a**: `>=`
+- **Menor ou igual a**: `<=`
+
+## Operadores Lógicos
+
+- **Conjunção**: `&&`
+- **Disjunção**: `||`
+- **Negação**: `!`
+
+## Operadores Bitwise
+
+- **AND bit a bit**: `&`
+- **OR bit a bit**: `|`
+- **XOR bit a bit**: `^`
+- **Complemento bit a bit**: `~`
+- **Deslocamento à esquerda**: `<<`
+- **Deslocamento à direita**: `>>`
+
+## Operadores de Incremento/Decremento
+
+- **Incremento**: `++`
+- **Decremento**: `--`
+
+Esses são apenas alguns exemplos de operadores em Java. Existem outros operadores disponíveis, como o operador de negação unária `-`, o operador de comparação `==`, o operador de atribuição condicional `+=`, entre outros.
+
+Para obter mais informações sobre os operadores em Java, consulte a documentação oficial da linguagem.
