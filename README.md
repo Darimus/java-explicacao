@@ -198,3 +198,164 @@ public class ExemploNumerosNegativos {
 Neste exemplo, o número inicial é -5. Para tornar o número positivo, multiplicamos-o por -1. O resultado é 5, que é um número positivo.
 
 Lembre-se de que a operação de multiplicação por -1 apenas reverterá o sinal do número. Portanto, se o número já for positivo, a operação não terá efeito.
+
+## Como tornar um número negativo positivo em Java
+
+Se você deseja tornar um número negativo positivo em Java, você pode usar a operação de multiplicação por -1. Aqui está um exemplo de como fazer isso:
+
+```java
+public class ExemploNumerosNegativos {
+    public static void main(String[] args) {
+        int numero = -5; // número negativo
+
+        // Tornar o número positivo
+        numero = numero * -1;
+
+        System.out.println("Número positivo: " + numero);
+    }
+}
+```
+
+# Operadores Ternários em Java
+
+Os operadores ternários em Java são uma forma concisa de escrever condicionais simples. Eles permitem avaliar uma condição e retornar um valor com base no resultado dessa condição. O operador ternário tem a seguinte estrutura:
+
+```java
+condição ? valor_verdadeiro : valor_falso
+```
+
+Se a condição for verdadeira, o `valor_verdadeiro` será retornado. Caso contrário, o `valor_falso` será retornado.
+
+Aqui está um exemplo de uso de operadores ternários em Java:
+
+```java
+
+public class ExemploOperadoresTernarios {
+    public static void main(String[] args) {
+        int idade = 18;
+        String resultado = (idade >= 18) ? "Maior de idade" : "Menor de idade";
+
+        System.out.println(resultado); // Saída: "Maior de idade"
+    }
+}
+```
+
+Neste exemplo, a variável `idade` é verificada em relação à condição `idade >= 18`. Se a condição for verdadeira, o valor `"Maior de idade"` será atribuído à variável resultado. Caso contrário, o valor `"Menor de idade"` será atribuído.
+
+Os operadores ternários são úteis quando você precisa fazer uma decisão simples com base em uma condição. No entanto, é importante notar que o uso excessivo de operadores ternários pode tornar o código mais difícil de ler e entender. Portanto, é recomendado usar operadores ternários de forma modular e legível.
+
+Essa é uma breve explicação sobre operadores ternários em Java. Para mais detalhes e informações, consulte a documentação oficial da linguagem Java.
+
+# Métodos em Java
+
+## Criação de Métodos
+
+Em Java, um método é um bloco de código que executa uma tarefa específica. Você pode criar métodos para organizar e reutilizar código. A estrutura básica de um método em Java é a seguinte:
+
+```java
+modificador_de_acesso tipo_de_retorno nome_do_metodo(tipo1 parametro1, tipo2 parametro2, ...) {
+    // Corpo do método
+}
+```
+
+### Exemplo de Criação de um Método
+
+Aqui está um exemplo de um método que soma dois números inteiros:
+
+```java
+public int somar(int a, int b) {
+    return a + b;
+}
+```
+
+Neste exemplo:
+
+- **public**: é o modificador de acesso.
+- **int**: é o tipo de retorno.
+- **somar**: é o nome do método.
+- **int**: a e int b são os parâmetros do método.
+
+## Parâmetros de Métodos
+
+Os parâmetros são usados para passar informações para os métodos. Você define os parâmetros dentro dos parênteses após o nome do método. Quando você chama o método, você deve fornecer valores correspondentes a esses parâmetros.
+
+### Exemplo de Método com Parâmetros
+
+```java
+public void imprimirMensagem(String mensagem) {
+    System.out.println(mensagem);
+}
+```
+
+Neste exemplo:
+
+- **String**: mensagem é o parâmetro do método `imprimirMensagem`.
+  Para chamar este método, você faria algo assim:
+
+```java
+imprimirMensagem("Olá, mundo!");
+```
+
+## Visibilidade dos Métodos
+
+A visibilidade (ou modificadores de acesso) controla onde os métodos podem ser acessados. Os principais modificadores de acesso em Java são:
+
+- **public**: O método pode ser acessado de qualquer lugar.
+- **protected**: O método pode ser acessado dentro do mesmo pacote e por subclasses.
+- **default (sem modificador)**: O método pode ser acessado apenas dentro do mesmo pacote.
+- **private**: O método pode ser acessado apenas dentro da própria classe.
+
+### Exemplos de Métodos com Diferentes Níveis de Visibilidade
+
+#### Método Público
+
+#### Método Protegido
+
+#### Método Default
+
+#### Método Privado
+
+```java
+public class ExemploMetodos {
+
+    // Método público
+    public void exibirMensagem(String mensagem) {
+        System.out.println(mensagem);
+    }
+
+    // Método protegido
+    protected int somar(int a, int b) {
+        return a + b;
+    }
+
+    // Método de pacote (default)
+    void multiplicar(int a, int b) {
+        System.out.println(a * b);
+    }
+
+    // Método privado
+    private void metodoPrivado() {
+        System.out.println("Este método é privado!");
+    }
+
+    public static void main(String[] args) {
+        ExemploMetodos exemplo = new ExemploMetodos();
+
+        // Chamando método público
+        exemplo.exibirMensagem("Olá, mundo!");
+
+        // Chamando método protegido
+        int soma = exemplo.somar(3, 4);
+        System.out.println("Soma: " + soma);
+
+        // Chamando método de pacote
+        exemplo.multiplicar(3, 4);
+
+        // Chamando método privado dentro da própria classe
+        exemplo.metodoPrivado();
+    }
+}
+
+
+
+```
