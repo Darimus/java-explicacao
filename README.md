@@ -355,7 +355,75 @@ public class ExemploMetodos {
         exemplo.metodoPrivado();
     }
 }
-
-
-
 ```
+
+## Escopo em Java
+
+O escopo em Java é uma característica que determina em qual parte do programa uma variável ou método pode ser acessado. Existem três tipos principais de escopo em Java: escopo local, escopo de classe e escopo global.
+
+### Escopo Local
+
+O escopo local é o escopo mais restrito. Variáveis e métodos declarados dentro de um bloco de código, como um método ou um construtor, têm escopo local. Eles só podem ser acessados dentro desse bloco de código específico. Por exemplo:
+
+```java
+public class EscopoLocal {
+  public static void main(String[] args) {
+    int numero = 5; // Variável com escopo local
+
+    if (numero > 0) {
+      int outroNumero = 10; // Variável com escopo local
+      System.out.println("O número é maior que zero.");
+      System.out.println("O outro número é " + outroNumero);
+    }
+
+    System.out.println("O número é " + numero); // Erro de compilação: a variável 'outroNumero' não está acessível aqui
+  }
+}
+```
+
+Neste exemplo, as variáveis `numero` e `outroNumero` têm escopo local, pois são declaradas dentro de blocos de código diferentes. A variável `numero` pode ser acessada fora do bloco `if`, mas a variável `outroNumero` só pode ser acessada dentro do bloco `if`.
+
+## Escopo de Classe
+
+As variáveis de instância e métodos declarados dentro de uma classe têm escopo de classe. Eles podem ser acessados em qualquer lugar dentro da classe, mas não fora dela. Por exemplo:
+
+```java
+public class EscopoDeClasse {
+  int numero = 5; // Variável de instância com escopo de classe
+
+  public void imprimirNumero() {
+    System.out.println("O número é " + numero);
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    EscopoDeClasse objeto = new EscopoDeClasse();
+    objeto.imprimirNumero(); // Acesso ao método e à variável de instância
+  }
+}
+```
+
+Neste exemplo, a variável `numero` tem escopo de classe, pois é declarada dentro da classe `EscopoDeClasse`. O método `imprimirNumero()` também tem escopo de classe, pois é declarado dentro da classe `EscopoDeClasse`. Ambos podem ser acessados dentro da classe `Main`.
+
+## Escopo Global
+
+Variáveis e métodos declarados fora de qualquer classe têm escopo global. Eles podem ser acessados em qualquer lugar do programa. Por exemplo:
+
+```java
+int numeroGlobal = 5; // Variável global com escopo global
+
+public class EscopoGlobal {
+  public static void imprimirNumeroGlobal() {
+    System.out.println("O número global é " + numeroGlobal);
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    EscopoGlobal.imprimirNumeroGlobal(); // Acesso ao método e à variável global
+  }
+}
+```
+
+Neste exemplo, a variável `numeroGlobal` tem escopo global, pois é declarada fora de qualquer classe. O método `imprimirNumeroGlobal()` também tem escopo global, pois é declarado dentro da classe `EscopoGlobal`. Ambos podem ser acessados dentro da classe `Main`.
